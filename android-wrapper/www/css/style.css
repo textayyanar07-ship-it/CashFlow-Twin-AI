@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', 'Roboto', sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: #0a192f;
+    color: #e6f1ff;
+    overflow: hidden; /* Prevent scrolling on wrapper */
+}
+
+/* Screens */
+.screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a192f;
+    z-index: 10;
+}
+
+.screen.active {
+    display: flex;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+    max-width: 400px;
+}
+
+/* Typography */
+.title {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #64ffda; /* Accent: Cyan/teal */
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #8892b0;
+    margin-bottom: 40px;
+}
+
+.status-text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #a8b2d1;
+}
+
+/* Spinner */
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(100, 255, 218, 0.1);
+    border-radius: 50%;
+    border-top-color: #64ffda;
+    animation: spin 1s ease-in-out infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Error Screen */
+.icon-warning {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.error-title {
+    font-size: 24px;
+    color: #ff6b6b; /* Risk: Red */
+    margin-bottom: 15px;
+}
+
+.error-message {
+    color: #8892b0;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.btn-retry {
+    background-color: transparent;
+    color: #64ffda;
+    border: 1px solid #64ffda;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-retry:hover, .btn-retry:active {
+    background-color: rgba(100, 255, 218, 0.1);
+}
+
+/* Iframe */
+#app-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index: 1; /* Behind loading screens initially */
+    background-color: #0a192f;
+}

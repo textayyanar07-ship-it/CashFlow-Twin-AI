@@ -1,0 +1,39 @@
+# ─── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# ─── Virtual environments ─────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+.env
+
+# ─── Jupyter / IPython ────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ─── ML model artifacts ───────────────────────────────────────────────────────
+model.pkl
+*.pkl
+*.joblib
+
+# ─── Streamlit secrets (NEVER commit) ────────────────────────────────────────
+.streamlit/secrets.toml
+
+# ─── Data files (may contain sensitive business data) ────────────────────────
+data/
+
+# ─── OS / editor noise ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/

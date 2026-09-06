@@ -1,0 +1,18 @@
+{
+  "appId": "com.cashflowtwin.ai",
+  "appName": "CashFlow Twin AI",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 3000,
+      "launchAutoHide": true,
+      "backgroundColor": "#0a192f",
+      "androidSplashResourceName": "splash",
+      "androidScaleType": "CENTER_CROP",
+      "showSpinner": true,
+      "androidSpinnerStyle": "large",
+      "spinnerColor": "#64ffda"
+    }
+  }
+}
