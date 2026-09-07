@@ -54,7 +54,7 @@ def get_explanation_and_recommendations(context: dict) -> dict:
         return _fallback(context, error="google-genai SDK not installed", reason="no_sdk")
 
     # ── Attempt live Gemini call ──────────────────────────────────────────────
-    MODELS = ["gemini-2.5-flash", "gemini-1.5-flash", "gemini-2.5-flash"]
+    MODELS = ["gemini-3.6-flash", "gemini-3.6-flashh", "gemini-3.6-flash"]
     prompt = _build_prompt(context)
 
     client = _genai.Client(api_key=api_key)
